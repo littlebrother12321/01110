@@ -20,10 +20,10 @@ Preface: *For learning: Plane-1* (Plane, that terrain (like heightmaps or stuff 
 To break this down into a few smaller goals I thinks we can do it as follows (Major/Minor based off difficulty and how big of accomplishment is.):  
 Phase 1, Pre Prep
 
-1. *(yes done) Get vkcube going on the computers we will be working with. (Minor)*  
+ /*(yes done) Get vkcube going on the computers we will be working with. (Minor)*  
    1. *This works on my computer fine. (David)*  
    2. *ArchLappier is happy with it.*  
-2. *Figure out which vulkan version we need to use for support on the compys we are using. (Minor)*  
+ /*Figure out which vulkan version we need to use for support on the compys we are using. (Minor)*  
    1. *ArchLappier: 1.4.321*  
    2. *My computer works for the newest or just whatever (David)*
    3. Base off some reaserchhh I did we acctually probably should use 1.0 vulkan because thats what the HD 4000 acctually supports fully. We won't lose much, only fancy stuff we wouldn't even use.
