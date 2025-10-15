@@ -6,12 +6,11 @@ Preface: *For learning: Plane-1* (Plane, that terrain (like heightmaps or stuff 
 4. *Shaders, vertex, fragment, compute for all rendering and maths. (?Does the arch lappyer support these for on vulkan?.. Is that even a thing on vulkan or does it use other shaders ??? )*   
      
    Goal: use shaders to quickly and efficiently generate terrain and render it.  
-     
-   ![][image1]  
+     IMAGE MISSING
+ 
      
    This is good enough. Though if we can get this working I think we should try this ([its just a more complex pearlin stuff](https://www.youtube.com/watch?v=gsJHzBTPG0Y&t=3s).):   
-   **![][image2]**  
-     
+      IMAGE MISSING
      
      
    
@@ -27,7 +26,9 @@ Phase 1, Pre Prep
 2. *Figure out which vulkan version we need to use for support on the compys we are using. (Minor)*  
    1. *ArchLappier: 1.4.321*  
    2. *My computer works for the newest or just whatever (David)*
+   3. Base off some reaserchhh I did we acctually probably should use 1.0 vulkan because thats what the HD 4000 acctually supports fully. We won't lose much, only fancy stuff we wouldn't even use.
 
+---
    
 
 3. Get the weird packages working, ie, get the vulkan to be imported properly. (Major)  
