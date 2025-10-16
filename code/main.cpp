@@ -7,25 +7,35 @@
 #include <glm/mat4x4.hpp>
 
 #include <iostream>
+#include <vulkan/vulkan.h> //For my computer I needed to import this... so I added this (Dave)
+#include <vector>
 
 int main() {
   glfwInit();
 
   glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
   glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-  GLFWwindow* window = glfwCreateWindow(800, 600, "Luke's epic window of epiccness TOO!", NULL, NULL);
+  GLFWwindow* window = glfwCreateWindow(800, 600, "01110 epic window of epiccness TOO!", NULL, NULL); //Would this edited name be more accurate? (Dave)
   if (window == NULL)
     {
-      std::cout << "uh oh window couldn't oopsie" << std::endl;
+      std::cout << "uh oh window couldn't, oopsie. I am crash now." << std::endl;
       glfwTerminate();
       return -1;
     };
   glfwMakeContextCurrent(window);
   
   uint32_t extensionCount = 0;
-  vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
+  vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr); //Shortest vulkan name of thing ever: vkEnumerateInstanceExtensionProperties. Lol. (Dave)
 
-  std::cout << extensionCount << " extensions supported\n";
+  std::cout << extensionCount << " extensions supported\n"; //I get 24 (dave)
+
+  // Print all the extensions you have but like their names too
+  std::vector<VkExtensionProperties> extensions(extensionCount);
+  vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, extensions.data()); //Shortest vulkan name of thing ever: vkEnumerateInstanceExtensionProperties. Lol. (Dave)
+  
+  for (const auto& ext : extensions) {
+    std::cout << "\t" << ext.extensionName << "\n";
+  }
 
   glm::mat4 matrix;
   glm::vec4 vec;
