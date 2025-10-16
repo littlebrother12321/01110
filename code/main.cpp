@@ -15,6 +15,7 @@ int main() {
 
   glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
   glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+  glfwWindowHint(GLFW_PLATFORM, GLFW_PLATFORM_WAYLAND); //added this line so it might acctually make a window I can see, it didn't work (dave)
   GLFWwindow* window = glfwCreateWindow(800, 600, "01110 epic window of epiccness TOO!", NULL, NULL); //Would this edited name be more accurate? (Dave)
   if (window == NULL)
     {
