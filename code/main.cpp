@@ -9,7 +9,9 @@
 #include <iostream>
 #include <vulkan/vulkan.h> //For my computer I needed to import this... so I added this (Dave)
 #include <vector>
-
+//I looked into the toto-rial and its not acctually mentioneds it ment to have acctually works... 
+//so yeah I think we finished this part of the totorial... probably
+//I think we should get started on the next part probably probably (Probably dave)
 int main() {
   glfwInit();
 
@@ -39,11 +41,11 @@ int main() {
     std::cout << "\t" << ext.extensionName << "\n";
   }
 
-  //trying some random stuff the nasty AI told me to do
-  VkSurfaceKHR* surface;
-  if (glfwCreateWindowSurface(instance, window, NULL, &surface) != VK_SUCCESS) { // May need to define an instance (luke)
-    throw std::runtime_error("no window surface successed");
-  }
+  //trying some random stuff the nasty AI told me to do (luke) //I commented out cus its thorwing errors at me : (
+  // VkSurfaceKHR* surface;
+  // if (glfwCreateWindowSurface(instance, window, NULL, &surface) != VK_SUCCESS) { // May need to define an instance (luke)
+  //   throw std::runtime_error("no window surface successed");
+  // }
 
   // May need to build GLFW from source with wayland support on (luke)
   
