@@ -48,6 +48,7 @@ int main() {
   // }
 
   // May need to build GLFW from source with wayland support on (luke)
+   // glfw has wayland support - its in the readme on its repo page, third line : ) (Dave)
   
   glm::mat4 matrix;
   glm::vec4 vec;
