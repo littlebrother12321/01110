@@ -34,9 +34,11 @@ Phase 1, Pre Prep
 ---
    
 
-3. Get the weird packages working, ie, get the vulkan to be imported properly. (Major)  
-4. Get a garbage render pipeline that we will replace later (Major)  
-5. Open a window (Major)
+_3. Get the weird packages working, ie, get the vulkan to be imported properly. (Major)_
+I've got this mostly I think. (David)
+
+4. make a garbage render pipeline that we will replace later (Major)  
+6. Open a window (Major)
 
 Phase 2, Prep Work
 
